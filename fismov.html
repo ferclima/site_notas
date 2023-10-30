@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física do Movimento</title>
+    <link rel="stylesheet" href="css/style_fismov.css">
+    <script src="js/scrips_fismov.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Física do Movimento</h1>
+
+        <label for="quizz">Quizz (10%):</label>
+        <input type="number" id="quizz">
+
+        <label for="diagnostico1">Diagnóstico 1 (15%):</label>
+        <input type="number" id="diagnostico1">
+
+        <label for="provaIntermediaria">Prova Intermediária (30%):</label>
+        <input type="number" id="provaIntermediaria">
+
+        <label for="diagnostico2">Diagnóstico 2 (15%):</label>
+        <input type="number" id="diagnostico2">
+
+        <label for="provaFinal">Prova Final (30%):</label>
+        <input type="number" id="provaFinal">
+
+        <div class="buttons">
+            <button onclick="returnToStart()">Voltar</button>
+            <button onclick="clearFields()">Limpar</button>
+            <button onclick="calculateMinGrade()">Média</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="popup">
+            <div class="popup-inner">
+                <span class="popup-content"></span>
+                <button class="popup-close-btn" onclick="closePopup()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

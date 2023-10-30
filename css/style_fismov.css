@@ -1,0 +1,132 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 6.5% 8% 0% 8%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+input[type="number"] {
+    width: 94%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+input[type="number"].invalid {
+    border-color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.buttons button {
+    padding: 12px 20px;
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #007aff;
+    color: #fff;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.buttons button:hover {
+    background-color: #005bb5;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* adicionado para garantir que o popup esteja sempre acima dos outros elementos */
+}
+
+.popup-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateX(122%);
+    margin-top: 20%;
+}
+
+.popup-close-btn {
+    padding: 8px 15px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 8rem;
+    height: 2.25rem;
+}
+
+.popup-close-btn:hover {
+    background-color: #005bb5;
+}
+
+.popup-content {
+    font-size: 1.2rem;
+}

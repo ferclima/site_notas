@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acionamentos Elétricos</title>
+    <link rel="stylesheet" href="css/style_fismov.css">
+    <script src="js/script_acionas.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Acionamentos Elétricos</h1>
+
+        <label for="L1">Lista de Exercícios 1 (1,25%):</label>
+        <input type="number" id="L1">
+
+        <label for="L2">Lista de Exercícios 2 (1,25%):</label>
+        <input type="number" id="L2">
+
+        <label for="L3">Lista de Exercícios 3 (1,25%):</label>
+        <input type="number" id="L3">
+
+        <label for="L4">Lista de Exercícios 4 (1,25%):</label>
+        <input type="number" id="L4">
+
+        <label for="P1">Projeto 1 (20%):</label>
+        <input type="number" id="P1">
+
+        <label for="P2">Projeto 2 (20%):</label>
+        <input type="number" id="P2">
+
+        <label for="PI">Prova Intermediária (22%):</label>
+        <input type="number" id="PI">
+
+        <label for="PF">Prova Final (33%):</label>
+        <input type="number" id="PF">
+
+        <div class="buttons">
+            <button onclick="returnToStart()">Voltar</button>
+            <button onclick="clearFields()">Limpar</button>
+            <button onclick="calculateMinGrade()">Média</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="popup">
+            <div class="popup-inner">
+                <span class="popup-content"></span>
+                <button class="popup-close-btn" onclick="closePopup()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática da Variação</title>
+    <link rel="stylesheet" href="css/style_matvar.css">
+    <script src="js/script_matvar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Matemática da Variação</h1>
+
+        <label for="A1">Avaliação 1 (10%):</label>
+        <input type="number" id="A1">
+
+        <label for="PI">Prova Intermediária (30%):</label>
+        <input type="number" id="PI">
+
+        <label for="A3">Avaliação 3 (25%):</label>
+        <input type="number" id="A3">
+
+        <label for="A4">Avaliação 4 (30%):</label>
+        <input type="number" id="A4">
+
+        <div class="buttons">
+            <button onclick="returnToStart()">Voltar</button>
+            <button onclick="clearFields()">Limpar</button>
+            <button onclick="calculateMinGrade()">Média</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="popup">
+            <div class="popup-inner">
+                <span class="popup-content"></span>
+                <button class="popup-close-btn" onclick="closePopup()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
